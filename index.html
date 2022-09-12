@@ -1,0 +1,772 @@
+<html>
+<head>
+  <style>
+    textarea{
+  width: 100%;
+  height: 300px;
+}
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  
+  </head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Holocure Save Modifier</h1>
+
+    <p>By Leonノカノカ   (#わためいと)</p>
+
+    <p>For version DEMO 0.3.1656491913</p>
+
+    
+
+    <p>Game Download: <a href="https://t.co/oDiSJuUYRz" target="_blank">https://t.co/oDiSJuUYRz</a></p>
+
+    <p>Official Twitter: <a href="https://twitter.com/holocuregame" target="_blank">https://twitter.com/holocuregame</a></p>
+
+    <p>FanWiki: <a href="https://hololive.wiki/wiki/HoloCure" target="_blank">https://hololive.wiki/wiki/HoloCure</a></p>
+
+    <div class="alert alert-success" role="alert">
+
+      Have fun of breaking boundary.
+
+      <ul>
+
+        <li>If you set ATK to 999, you are one punch Holomem.</li>
+
+        <li>If you set SPD to 999, you will run extremely fast.</li>
+
+      </ul>
+
+    </div>
+
+    <hr>
+
+    <h2>1. Find and backup your save.dat:</h2>
+
+    <ol>
+
+      <li>
+
+        If you never open game before, please open game at least once.</li>
+
+      <li>Open explorer and paste "%LOCALAPPDATA%\HoloCure"</li>
+
+      <li>You will see save.dat, pleace backup it (copy and paste at same location is fine)</li>
+
+      <li>Open save.dat with Notepad</li>
+
+    </ol>
+
+    <hr>
+
+    <h2>2. Paste your save.dat here:</h2>
+
+    <div class="form-group">
+
+      <div class="col-md-12">
+
+        <textarea class="form-control" id="input" row="100"></textarea>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+    <form id="mainForm">
+
+      <div class="row">
+
+        <div "col">
+
+        <h2>3. Modify Save Here</h2>
+
+          <ul>
+
+            <li>All items and weapons will automatically unlocked</li>
+
+            <li>You can see suggestions at bottom of this page</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="form-group row">
+
+        <label class="col-sm-2 col-form-label">holoCoins</label>
+
+        <div class="col-sm-4">
+
+          <input type="number" class="form-control" id="holoCoins">
+
+        </div>
+
+      </div>
+
+      <div class="card card-body">
+
+        <h4>Shop Items</h4>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">HP</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" id="HP">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">ATK</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" id="ATK">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">SPD</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" id="SPD">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">crit</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" id="crit">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">pickupRange</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" id="pickupRange">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">haste</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" id="haste">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">Regeneration</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" id="regen">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">Special Attack</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" id="specUnlock">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">Special Cooldown reduction</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" id="specCDR">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">EXP</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" id="EXP">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">food</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" id="food">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">moneyGain</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" id="moneyGain">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">reroll</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" id="reroll">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">challenge</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" id="challenge">
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="card card-body">
+
+        <h4>Characters</h4>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">ame</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" data-type="characters" id="ame">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">gura</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" data-type="characters" id="gura">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">ina</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" data-type="characters" id="ina">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">kiara</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" data-type="characters" id="kiara">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">calli</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" data-type="characters" id="calli">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">bae</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" data-type="characters" id="bae">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">kronii</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" data-type="characters" id="kronii">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">fauna</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" data-type="characters" id="fauna">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">mumei</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" data-type="characters" id="mumei">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">sana</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" data-type="characters" id="sana">
+
+          </div>
+
+        </div>
+
+        <div class="form-group row">
+
+          <label class="col-sm-2 col-form-label">irys</label>
+
+          <div class="col-sm-4">
+
+            <input type="number" class="form-control" data-type="characters" id="irys">
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </form>
+
+    <hr>
+
+    <h2>4. Copy this and replace your save.dat. And restart game.</h2>
+
+    <div class="form-group">
+
+      <div class="col-md-12">
+
+        <textarea id="output" row="100"></textarea>
+
+      </div>
+
+    </div>
+
+    
+
+    <h4>Suggestions</h4>
+
+    <pre>
+
+Easy mode:
+
+HP 30
+
+ATK 10
+
+SPD 10
+
+crit 10
+
+pickupRange 10
+
+haste 10
+
+Regeneration 10
+
+Special Attack 1
+
+Special Cooldown reduction 5
+
+EXP 5
+
+food 10
+
+moneyGain 10
+
+reroll 1
+
+challenge 0
+
+characters: remain unchange
+
+Undead:
+
+HP 10000
+
+Regeneration 10000
+
+food 100
+
+challenge 0
+
+others: remain unchange
+
+I-just-lazy:
+
+pickupRange 100
+
+others: remain unchange
+
+One punch Holomem:
+
+ATK 1000
+
+others: remain unchange
+
+</pre>
+
+  </div>
+  <script src="https://unpkg.com/rxjs@5.4.2/bundles/Rx.min.js">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js">
+<script>
+  ​const mainForm = document.getElementById("mainForm");
+const inputBox = document.getElementById("input");
+
+String.prototype.replaceAll = function (search, replacement) {
+  var target = this;
+  return target.replace(new RegExp(search, "g"), replacement);
+};
+
+class Save {
+  constructor(textSave) {
+    try {
+      var jsonStartText = '{ "';
+      var jsonStartIndex = textSave.indexOf(jsonStartText);
+      // if (jsonStartIndex < 0) {
+      //   jsonStartText = '{"';
+      //   jsonStartIndex = textSave.indexOf(jsonStartText);
+      // }
+      this.key = textSave.substring(0, jsonStartIndex);
+      var textData = textSave.substring(jsonStartIndex);
+      textData = textData.substring(0, textData.lastIndexOf("}") + 1);
+      this.data = JSON.parse(textData);
+      if (!this.key || !this.data) throw Exception();
+    } catch (err) {
+      this.data = {};
+    }
+  }
+  toString() {
+    return this.key + JSON.stringify(this.data);
+  }
+}
+
+class SaveModifier {
+  parse(rawSave) {
+    try {
+      this.textSave = this.decode(rawSave);
+      this.save = new Save(this.textSave);
+    } catch (err) {
+      this.textSave = this.decode();
+      this.save = new Save();
+    }
+  }
+
+  decode(rawSave) {
+    return atob(rawSave).replaceAll("\\\\", "\\\\");
+  }
+
+  encode(saveObj) {
+    var str = saveObj.toString();
+    return btoa(str.replaceAll("\\\\\\\\", "\\").replace('{"', '{ "'));
+  }
+
+  getEncodedSave() {
+    if (this.save.key && this.save.data) return this.encode(this.save);
+    return "";
+  }
+}
+
+function print(txt) {
+  console.log(txt);
+  document.getElementById("output").innerText = txt;
+}
+
+function main() {
+  Rx.Observable.fromEvent(inputBox, "change").subscribe((event) => {
+    inputUpdated();
+  });
+
+  Rx.Observable.fromEvent(mainForm, "change").subscribe((event) => {
+    console.log("form updated");
+    modifier = formToData(modifier);
+    print(modifier.getEncodedSave());
+  });
+
+  const modifierObservable = Rx.Observable.of(modifier);
+  modifierObservable.subscribe((event) => {
+    console.log("modifier updated", event);
+    print(modifier.getEncodedSave());
+  });
+}
+function formToData(modifier) {
+  var data = modifier.save.data;
+  Object.keys(data).forEach((itemKey) => {
+    var ele = document.getElementById(itemKey);
+    if (ele) {
+      // if(ele.getAttribute('data-type') == "characters"){
+      // }else
+      modifier.save.data[itemKey] = Number.parseInt(
+        document.getElementById(itemKey).value
+      );
+    }
+  });
+
+  Object.keys(data.characters).forEach((itemKey) => {
+    var [character, value] = data.characters[itemKey];
+    var ele = document.getElementById(character);
+    if (ele) {
+      data.characters[itemKey][1] = Number.parseInt(
+        document.getElementById(character).value
+      );
+    }
+  });
+
+  return modifier;
+}
+function dataToForm(modifier) {
+  var data = modifier.save.data;
+  Object.keys(data).forEach((itemKey) => {
+    if (document.getElementById(itemKey)) {
+      document.getElementById(itemKey).value = data[itemKey];
+    }
+  });
+  Object.keys(data.characters).forEach((itemKey) => {
+    var [character, value] = data.characters[itemKey];
+    if (document.getElementById(character)) {
+      document.getElementById(character).value = value;
+    }
+  });
+}
+function inputUpdated() {
+  console.log("input updated");
+  try {
+    var rawSave = inputBox.value;
+    modifier.parse(rawSave);
+
+    modifier.save.data.unlockedItems = [
+      "BodyPillow",
+      "FullMeal",
+      "PikiPikiPiman",
+      "SuccubusHorn",
+      "Headphones",
+      "UberSheep",
+      "HolyMilk",
+      "Sake",
+      "FaceMask",
+      "CreditCard",
+      "GorillasPaw",
+      "IdolCostume",
+      "StudyGlasses",
+      "InjectionAsacoco",
+      "EnergyDrink",
+      "Plushie",
+      "SuperChattoTime"
+    ];
+    modifier.save.data.unlockedWeapons = [
+      "PsychoAxe",
+      "Glowstick",
+      "SpiderCooking",
+      "Tailplug",
+      "BLBook",
+      "EliteLava",
+      "HoloBomb",
+      "HoloLaser",
+      "CuttingBoard",
+      "IdolSong"
+    ];
+    modifier.save.data.seenCollabs = [
+      "EliteCooking",
+      "BreatheInAsacoco",
+      "BLLover",
+      "MiComet",
+      "DragonBeam",
+      "FlatBoard",
+      "LightBeam",
+      "IdolConcert"
+    ];
+    dataToForm(modifier);
+    print(modifier.getEncodedSave());
+  } catch (err) {
+    print(err);
+  }
+}
+
+modifier = new SaveModifier();
+main();
+
+/*
+var editedValue = {
+  holoCoins: 9999999.0,
+  food: 999.0,
+  haste: 999.0,
+  ATK: 10.0,
+  regen: 999.0,
+  EXP: 999.0,
+  moneyGain: 999.0,
+  reroll: 999.0,
+  refund: 0.0,
+  challenge: 0.0,
+  pickupRange: 999.0,
+  SPD: 10.0,
+  specUnlock: 1.0,
+  specCDR: 999.0,
+  HP: 999.0,
+  crit: 999.0
+  randomMoneyKey: 53.0,
+  unlockedCharacters: 0.0,
+  eliminate: 0.0,
+  unlockedItems: [
+    "BodyPillow",
+    "FullMeal",
+    "PikiPikiPiman",
+    "SuccubusHorn",
+    "Headphones",
+    "UberSheep",
+    "HolyMilk",
+    "Sake",
+    "FaceMask",
+    "CreditCard",
+    "GorillasPaw",
+    "IdolCostume",
+    "StudyGlasses",
+    "InjectionAsacoco",
+    "EnergyDrink",
+    "Plushie",
+    "SuperChattoTime"
+  ],
+  unlockedWeapons: [
+    "PsychoAxe",
+    "Glowstick",
+    "SpiderCooking",
+    "Tailplug",
+    "BLBook",
+    "EliteLava",
+    "HoloBomb",
+    "HoloLaser",
+    "CuttingBoard",
+    "IdolSong"
+  ],
+  seenCollabs: [
+    "EliteCooking",
+    "BreatheInAsacoco",
+    "BLLover",
+    "MiComet",
+    "DragonBeam",
+    "FlatBoard",
+    "LightBeam",
+    "IdolConcert"
+  ],
+  characters: [
+    ["kronii", 999.0],
+    ["fubuki", 0.0],
+    ["calli", 1.0],
+    ["none", 0.0],
+    ["fauna", 999.0],
+    ["empty", 0.0],
+    ["gura", 999.0],
+    ["sana", 999.0],
+    ["irys", 999.0],
+    ["bae", 999.0],
+    ["kiara", 999.0],
+    ["ina", 999.0],
+    ["ame", 999.0],
+    ["mumei", 999.0]
+  ],
+};
+*/
+
+/*
+One punchman:
+Yagoo Killer:
+*/
+
+  </script>
+</body>
+
+</html>

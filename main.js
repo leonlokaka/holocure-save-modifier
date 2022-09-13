@@ -2,7 +2,6 @@
     TODO:
     Layout
     Allow choosing items and weapons
-    Add function to load suggestions into form
 */
 const mainForm = document.getElementById("mainForm");
 const inputBox = document.getElementById("input");
@@ -146,7 +145,42 @@ function inputUpdated() {
             "InjectionAsacoco",
             "EnergyDrink",
             "Plushie",
-            "SuperChattoTime"
+            "SuperChattoTime",
+            "PiggyBank",
+            "Halu",
+            "Membership",
+            "Bandaid",
+            "GWSPill",
+            "ChickensFeather",
+            "Limiter"
+        ];
+
+        // modifier.save.data.tears = [
+        //     [
+        //         "myth",
+        //         0.0
+        //     ],
+        //     [
+        //         "councilHope",
+        //         0.0
+        //     ],
+        //     [
+        //         "gamers",
+        //         0.0
+        //     ],
+        //     [
+        //         "gen0",
+        //         8.0
+        //     ],
+        //     [
+        //         "gen1",
+        //         0.0
+        //     ]
+        // ];
+        modifier.save.data.unlockedStages = [
+            "STAGE 1",
+            "STAGE 2",
+            "STAGE 1 (HARD)"
         ];
         modifier.save.data.unlockedWeapons = [
             "PsychoAxe",
@@ -158,7 +192,10 @@ function inputUpdated() {
             "HoloBomb",
             "HoloLaser",
             "CuttingBoard",
-            "IdolSong"
+            "IdolSong",
+            "WamyWater",
+            "CEOTears",
+            "XPotato"
         ];
         modifier.save.data.seenCollabs = [
             "EliteCooking",
@@ -168,8 +205,24 @@ function inputUpdated() {
             "DragonBeam",
             "FlatBoard",
             "LightBeam",
-            "IdolConcert"
+            "IdolConcert",
+            "BrokenDreams",
+            "RapDog",
+            "StreamOfTears",
+            "MariLamy"
         ];
+        modifier.save.data.unlockedOutfits = [
+            "default",
+            "ameAlt1",
+            "inaAlt1",
+            "guraAlt1",
+            "calliAlt1",
+            "kiaraAlt1",
+            "ameAlt1",
+            "irysAlt1",
+            "kurokami"
+        ];
+
         dataToForm(modifier);
         print(modifier.getEncodedSave());
 

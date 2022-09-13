@@ -6,6 +6,7 @@
 	<meta http-equiv="content-security-policy" content="">
 	<title>Holocure Save Modifier</title>
 	<meta name="description" content="Modify HoloCure save file online">
+	<meta name="keywords" content="HoloCure,Hololive"/>
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./style.css">
@@ -20,15 +21,14 @@
 	<div class="container">
 		<h1>HoloCure Save Modifier</h1>
 		<p>By Leonノカノカ ( #わためいと #雪民 )</p>
-		<p>For version DEMO 0.3.1656491913</p>
+		<p>For version DEMO 0.4.1662787865</p>
 		<p>Game Download: <a href="https://t.co/oDiSJuUYRz" target="_blank">https://t.co/oDiSJuUYRz</a></p>
-		<p>Official Twitter: <a href="https://twitter.com/holocuregame" target="_blank">https://twitter.com/holocuregame</a>
-		</p>
+		<p>Official Twitter: <a href="https://twitter.com/holocuregame" target="_blank">https://twitter.com/holocuregame</a></p>
+		<p>Information: <a href="https://shabla.github.io/holocure-infos" target="_blank">https://shabla.github.io/holocure-infos</a></p>
 		<p>FanWiki: <a href="https://hololive.wiki/wiki/HoloCure" target="_blank">https://hololive.wiki/wiki/HoloCure</a>
 		</p>
 		<div class="alert alert-success" role="alert"> Have fun of breaking boundary. <ul>
-				<li>If you set ATK to 999, you are one punch Holomem.</li>
-				<li>If you set SPD to 999, you will run extremely fast.</li>
+				<li>If you set HoloCoins to 999999999, you will have so many money.</li>
 			</ul>
 		</div>
 		<hr>
@@ -64,27 +64,27 @@
 					</ul>
 				</div>
 			</div>
-			<div class="form-group row"> <label class="col-sm-2 col-form-label">holoCoins</label>
+			<div class="form-group row"> <label class="col-sm-2 col-form-label">HoloCoins</label>
 				<div class="col-sm-4"> <input type="number" class="form-control" id="holoCoins"> </div>
 			</div>
 			<div class="card card-body">
 				<h4>Shop Items</h4>
-				<div class="form-group row"> <label class="col-sm-2 col-form-label">HP</label>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">Max HP Up</label>
 					<div class="col-sm-4"> <input type="number" class="form-control" id="HP"> </div>
 				</div>
-				<div class="form-group row"> <label class="col-sm-2 col-form-label">ATK</label>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">ATK Up</label>
 					<div class="col-sm-4"> <input type="number" class="form-control" id="ATK"> </div>
 				</div>
-				<div class="form-group row"> <label class="col-sm-2 col-form-label">SPD</label>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">SPD Up</label>
 					<div class="col-sm-4"> <input type="number" class="form-control" id="SPD"> </div>
 				</div>
-				<div class="form-group row"> <label class="col-sm-2 col-form-label">crit</label>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">Crit Up</label>
 					<div class="col-sm-4"> <input type="number" class="form-control" id="crit"> </div>
 				</div>
-				<div class="form-group row"> <label class="col-sm-2 col-form-label">pickupRange</label>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">Pick Up Range</label>
 					<div class="col-sm-4"> <input type="number" class="form-control" id="pickupRange"> </div>
 				</div>
-				<div class="form-group row"> <label class="col-sm-2 col-form-label">haste</label>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">Haste Up</label>
 					<div class="col-sm-4"> <input type="number" class="form-control" id="haste"> </div>
 				</div>
 				<div class="form-group row"> <label class="col-sm-2 col-form-label">Regeneration</label>
@@ -96,19 +96,31 @@
 				<div class="form-group row"> <label class="col-sm-2 col-form-label">Special Cooldown reduction</label>
 					<div class="col-sm-4"> <input type="number" class="form-control" id="specCDR"> </div>
 				</div>
-				<div class="form-group row"> <label class="col-sm-2 col-form-label">EXP</label>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">Growth</label>
+					<div class="col-sm-4"> <input type="number" class="form-control" id="growth"> </div>
+				</div>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">EXP Gain Up</label>
 					<div class="col-sm-4"> <input type="number" class="form-control" id="EXP"> </div>
 				</div>
-				<div class="form-group row"> <label class="col-sm-2 col-form-label">food</label>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">Food Drops Up</label>
 					<div class="col-sm-4"> <input type="number" class="form-control" id="food"> </div>
 				</div>
-				<div class="form-group row"> <label class="col-sm-2 col-form-label">moneyGain</label>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">Money Gain Up</label>
 					<div class="col-sm-4"> <input type="number" class="form-control" id="moneyGain"> </div>
 				</div>
-				<div class="form-group row"> <label class="col-sm-2 col-form-label">reroll</label>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">Reroll</label>
 					<div class="col-sm-4"> <input type="number" class="form-control" id="reroll"> </div>
 				</div>
-				<div class="form-group row"> <label class="col-sm-2 col-form-label">challenge</label>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">Enhancement Rate Up</label>
+					<div class="col-sm-4"> <input type="number" class="form-control" id="enhanceUp"> </div>
+				</div>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">Defense Up</label>
+					<div class="col-sm-4"> <input type="number" class="form-control" id="DR"> </div>
+				</div>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">G Rank Off</label>
+					<div class="col-sm-4"> <input type="number" class="form-control" id="GROff"> </div>
+				</div>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">Challenge</label>
 					<div class="col-sm-4"> <input type="number" class="form-control" id="challenge"> </div>
 				</div>
 			</div>
@@ -158,6 +170,42 @@
 					<div class="col-sm-4"> <input type="number" class="form-control" data-type="characters" id="irys">
 					</div>
 				</div>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">fubuki</label>
+					<div class="col-sm-4"> <input type="number" class="form-control" data-type="characters" id="fubuki">
+					</div>
+				</div>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">mio</label>
+					<div class="col-sm-4"> <input type="number" class="form-control" data-type="characters" id="mio">
+					</div>
+				</div>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">okayu</label>
+					<div class="col-sm-4"> <input type="number" class="form-control" data-type="characters" id="okayu">
+					</div>
+				</div>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">korone</label>
+					<div class="col-sm-4"> <input type="number" class="form-control" data-type="characters" id="korone">
+					</div>
+				</div>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">sora</label>
+					<div class="col-sm-4"> <input type="number" class="form-control" data-type="characters" id="sora">
+					</div>
+				</div>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">azki</label>
+					<div class="col-sm-4"> <input type="number" class="form-control" data-type="characters" id="azki">
+					</div>
+				</div>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">roboco</label>
+					<div class="col-sm-4"> <input type="number" class="form-control" data-type="characters" id="roboco">
+					</div>
+				</div>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">suisei</label>
+					<div class="col-sm-4"> <input type="number" class="form-control" data-type="characters" id="suisei">
+					</div>
+				</div>
+				<div class="form-group row"> <label class="col-sm-2 col-form-label">miko</label>
+					<div class="col-sm-4"> <input type="number" class="form-control" data-type="characters" id="miko">
+					</div>
+				</div>
 			</div>
 		</form>
 		<hr>
@@ -169,65 +217,6 @@
 				<textarea id="output" row="100"></textarea>
 			</div>
 		</div>
-		<h4>Suggestions</h4>
-		<table class="table">
-			<tr>
-				<td>Just money</td>
-				<td>
-					<pre>
-						holoCoins 1000000
-						others: remain unchange</pre>
-				</td>
-			</tr>
-			<tr>
-				<td>Easy mode</td>
-				<td>
-					<pre>
-						HP 30
-						ATK 10
-						SPD 10
-						crit 10
-						pickupRange 10
-						haste 10
-						Regeneration 10
-						Special Attack 1
-						Special Cooldown reduction 5
-						EXP 5
-						food 10
-						moneyGain 10
-						reroll 1
-						challenge 0
-						characters: remain unchange</pre>
-				</td>
-			</tr>
-			<tr>
-				<td>Undead</td>
-				<td>
-					<pre>
-						HP 10000
-						Regeneration 10000
-						food 100
-						challenge 0
-						others: remain unchange</pre>
-				</td>
-			</tr>
-			<tr>
-				<td>I-just-lazy</td>
-				<td>
-					<pre>
-						pickupRange 100
-						others: remain unchange</pre>
-				</td>
-			</tr>
-			<tr>
-				<td>One punch Holomem</td>
-				<td>
-					<pre>
-						ATK 1000
-						others: remain unchange</pre>
-				</td>
-			</tr>
-		</table>
 	</div>
 	<script src="https://unpkg.com/rxjs@5.4.2/bundles/Rx.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
